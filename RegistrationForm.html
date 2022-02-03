@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-image: url(bgimage.webp);
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+        
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(185, 235, 161);
+            border-radius: 30px;
+        }
+        
+        td {
+            padding-top: 15px;
+            font-weight: bold;
+        }
+        
+        h1 {
+            color: rgb(240, 239, 250);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h1>Student Registration Form</h1>
+        <table>
+            <tr>
+                <td>First Name :</td>
+                <td><input type="text" name="first name" placeholder="Enter first name" required></td>
+            </tr>
+            <tr>
+                <td>Last Name :</td>
+                <td><input type="text" name="last name" placeholder="Enter last name" required></td>
+            </tr>
+            <tr>
+                <td>Email ID :</td>
+                <td><input type="email" name="email" placeholder="Enter email" required></td>
+            </tr>
+            <tr>
+                <td>Contact Details :</td>
+                <td><input type="text" name="contact" placeholder="Enter mobile number" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td>Gender :</td>
+                <td><input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female</td>
+            </tr>
+            <tr>
+                <td>DOB :</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td style="width: 100px;"><input type="number" name="num" min="18" max="28"></td>
+            </tr>
+            <tr>
+                <td>Language :</td>
+                <td><input type="checkbox" name="language" value=""> Python
+                    <input type="checkbox" name="language" value=""> PHP
+                    <input type="checkbox" name="language" value=""> Java
+                    <input type="checkbox" name="language" value=""> C++
+                </td>
+            </tr>
+            <tr>
+                <td>Eductional Qualification</td>
+                <td>
+                    <select>
+                        <option>Select option</option>
+                        <option>10+2</option>
+                        <option>Graguation</option>
+                        <option> Post Graguation</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Address :</td>
+                <td><textarea name="comment" cols="30" rows="3" placeholder="Address"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Send">
+                    <input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
